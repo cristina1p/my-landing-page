@@ -23,3 +23,13 @@ note: 'Defalut Vs Named import'
 
 note: 'Component based architecture'
         'create css file for each component'
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+note: 'Add typescript, steps'
+        : 'npm install -D typescript @types/react @types/react-dom @vitejs/plugin-react'
+        : 'tsconfig.json'
+        : js => ts
+        : jsx => tsx
+        : 'env.d.ts'     //  Cannot find module... index.css"
