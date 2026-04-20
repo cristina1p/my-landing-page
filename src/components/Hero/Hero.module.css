@@ -1,7 +1,12 @@
-/* .hero {
-} */
-
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 56px 0px 80px;
+}
+
+.textGroup {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,5 +36,13 @@
 }
 
 .imgContainer {
+  flex: 1;
   display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
 }

@@ -21,4 +21,5 @@
 
 body {
   font-family: var(--font-main);
+  margin: 0;
 }
