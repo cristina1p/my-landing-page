@@ -33,3 +33,22 @@ note: 'Add typescript, steps'
         : js => ts
         : jsx => tsx
         : 'env.d.ts'     //  Cannot find module... index.css"
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+note: 'Class Names Vs Tag Selectors'
+        'If ComponentA.module.css has:'
+
+        
+                `.title { font-weight: bold; } `   /* This gets scoped */
+                `h1 { color: blue; }`         /* This stays global! */
+
+note: 'Fn+ F2' (devtools)
+
+note: 'Passing component reference'
+
+        : Icon: ArchiveIcon - passing
+        : React.ComponentType - react component - typing
+        : <Icon/> - rendering - rendering
+
+note: 'use map(), transform static grid => dynamic grid'

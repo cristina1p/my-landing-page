@@ -23,7 +23,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-p {
+.textGroup p {
   color: var(--text-input);
   text-align: center;
 }
