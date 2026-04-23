@@ -1,22 +1,19 @@
 import { ArrowIcon } from "../Icons/Arrow";
+import { FAQItemProps } from "../types/types";
 import styles from "./Accordion.module.css";
-import { useState } from "react";
 
-interface AccordionItemProps {
-  id: number;
-  title: string;
-  content: string;
-  Icon: React.ComponentType;
+export interface AccordionItemProps {
+  isOpen: boolean; // controlled by parent FAQ
+  onToggle: () => void; // controlled by parent FAQ
+  item: FAQItemProps;
 }
-
-export function AccordionItem({ title, content }: AccordionItemProps) {
-  const [isOpen, setIsOpen] = useState(false);
-
+export function AccordionItem({ isOpen, onToggle, item }: AccordionItemProps) {
+  const { title, content } = item;
   return (
     <div className={styles.itemContainer}>
       <button
         className={`${styles.trigger} ${isOpen ? styles.triggerActive : ""}`}
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={onToggle}
         aria-expanded={isOpen}
       >
         <span>{title}</span>
