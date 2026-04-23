@@ -1,12 +1,12 @@
-import { ArchiveIcon } from "../components/Icons/Archive";
-import { DashboardIcon } from "../components/Icons/Dashboard";
-import { FlagIcon } from "../components/Icons/Flag";
-import { LockIcon } from "../components/Icons/Lock";
-import { MailSendIcon } from "../components/Icons/MailSend";
-import { MapLocationIcon } from "../components/Icons/MapLocation";
-import { NetworkIcon } from "../components/Icons/Network";
-import { SavingsIcon } from "../components/Icons/Savings";
-import { TargetIcon } from "../components/Icons/Target";
+import { ArchiveIcon } from "../Icons/Archive";
+import { DashboardIcon } from "../Icons/Dashboard";
+import { FlagIcon } from "../Icons/Flag";
+import { LockIcon } from "../Icons/Lock";
+import { MailSendIcon } from "../Icons/MailSend";
+import { MapLocationIcon } from "../Icons/MapLocation";
+import { NetworkIcon } from "../Icons/Network";
+import { SavingsIcon } from "../Icons/Savings";
+import { TargetIcon } from "../Icons/Target";
 import styles from "./FavoriteTools.module.css";
 
 interface Tool {
