@@ -1,0 +1,40 @@
+.storyCard {
+  position: relative;
+  width: 266px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+
+.imgCard {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.contentCard {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatarCard {
+  width: 48px;
+  height: 48px;
+  align-self: center;
+}
+
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.authorGroup {
+  display: flex;
+  gap: 4px;
+  font-size: 14px;
+  color: var(--text-muted);
+}

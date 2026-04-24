@@ -1,0 +1,12 @@
+.label {
+  position: absolute;
+  z-index: 2;
+  font-size: 14px;
+  color: #1e40af;
+  background-color: #dbeafe;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 16px;
+  margin-left: 16px;
+}

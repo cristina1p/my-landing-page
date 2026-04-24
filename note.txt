@@ -52,3 +52,80 @@ note: 'Passing component reference'
         : <Icon/> - rendering - rendering
 
 note: 'use map(), transform static grid => dynamic grid'
+
+note: 'npm install lucide-react'
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+note: 'opacity:1' - nothing
+
+note: 'box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.25)'
+        'horizontal, vertical, blur, spread color'
+
+todo: 'click one close another'
+
+note: 'aria-expanded={isOpen}'
+        'accessibility attribute'
+
+todo1: 'close accordion on click outside'
+
+        'added this and also works the case `click one close another`' (useState is on 'Accordion')
+        'solution' - Lift State Up (move useState to FAQ)
+        'the parent become source of truth that coordinated which items to open'
+
+note: 'Unify FAQ and AccordionItem types'
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+note: 'remove padding from the FAQ section'
+
+note: 'git reset --soft HEAD~1'
+        'cancel last commit'
+
+        commit name: 'group properties into object & delete unused icon'
+
+
+todo: 'change id to index in FAQ section/const questionsData'
+
+todo: 'Story section'
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+// // 1
+// export interface AccordionItemProps extends FAQItemProps {
+//   isOpen: boolean;
+//   onToggle: () => void;
+// }
+
+// // 2
+// export interface AccordionItemProps {
+//   isOpen: boolean;
+//   onToggle: () => void;
+//   id: number;
+//   title: string;
+//   content: string;
+//   Icon: React.ComponentType;
+// }
+
+// // 3
+// export interface AccordionItemProps {
+//   isOpen: boolean;
+//   onToggle: () => void;
+//   item: {
+//     id: number;
+//     title: string;
+//     content: string;
+//     Icon: React.ComponentType;
+//   };
+// }
+
+// // 4
+// export interface AccordionItemProps {
+//   isOpen: boolean;
+//   onToggle: () => void;
+//   item: FAQItemProps;
+// }
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+note: 'always go with an icon svg rather than a png(better performance and clear design)'

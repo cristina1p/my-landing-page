@@ -1,0 +1,31 @@
+.storiesConatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+}
+
+.textGroup {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  background: var(--text-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.textGroup p {
+  color: var(--text-input);
+  text-align: center;
+}
+
+.cardGroup {
+  display: flex;
+  gap: 24px;
+  padding: 80px 0px 0px;
+}
