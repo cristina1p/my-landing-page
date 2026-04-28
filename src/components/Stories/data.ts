@@ -50,4 +50,21 @@ export const cardStories: CardStories[] = [
     authorAvatar: avatar4,
     isPromoted: false,
   },
+
+  {
+    id: 5,
+    imageUrl: colors,
+    tittle: "Colorful Face",
+    authorName: "Melvina Spring",
+    authorAvatar: avatar4,
+    isPromoted: false,
+  },
+  {
+    id: 6,
+    imageUrl: colors,
+    tittle: "Colorful Face",
+    authorName: "Melvina Spring",
+    authorAvatar: avatar4,
+    isPromoted: false,
+  },
 ];

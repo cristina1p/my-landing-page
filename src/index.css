@@ -26,7 +26,7 @@
 
   /* card */
   --card-shadow:
-    0 4px 6px -1px hsla(0, 0%, 0%, 0.1), 0 0 4px 0 hsla(0, 0%, 0%, 0.7);
+    0 4px 0px -1px hsla(0, 0%, 0%, 0.1), 0 0 4px 0 hsla(0, 0%, 0%, 0.7);
 }
 
 body {
@@ -47,4 +47,14 @@ p {
 h5,
 span {
   margin: 0;
+}
+
+button {
+  appearance: none; /* Removes platform-specific styling */
+  background: none; /* Removes the default grey gradient */
+  border: none; /* Removes the 2px inset/outset border */
+  padding: 0; /* Removes default internal spacing */
+  font: inherit; /* Forces it to use the parent's font */
+  cursor: pointer; /* Adds the hand icon back (highly recommended) */
+  outline: inherit;
 }

@@ -5,6 +5,7 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: var(--card-shadow);
+  flex-shrink: 0;
 }
 
 .imgCard {

@@ -129,3 +129,68 @@ todo: 'Story section'
 /////////////////////////////////////////////////////////////////////////////////////
 
 note: 'always go with an icon svg rather than a png(better performance and clear design)'
+
+note: 'aria-label={`${direction} scroll`}'
+        'for accessibility'
+
+note: 'adding states to arrow buttons steps'
+
+        1. to track scroll position and compare to container s width
+
+note: 'Math.ceil()' - rounds numbers up to nearest integer
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+note: 'horizontal scroll in container with cards, steps:'
+
+        : 'The scroll'
+                - declare a ref container, attach to container with cards
+                  & extract built-in property in HTML in the browser
+                        `const { scrollLeft, scrollWidth, clientWidth } = container;`   
+                                `clientWidth` - visible space on the screen that cards are visible through (in the container)
+                                `scrollWidth` - total with of all children(cards + gaps), total lenght of scrollable content
+                                `scrollLeft` - distance between left edge of the container and left edge of actual container
+                
+        : 'Layout arhitecture'
+                - move ArrowButtons outside scrollable container
+                  `containerStories, position relative & buttons position absolute`
+
+        : 'css refinement'
+                - 'cut off' card issue => padding to the container & flex-shrink:0 for cards
+
+        : 'state management'
+                - 'useState & useEffect' to monitor position 'scrollLeft'
+                  `useEffect, adds a scroll listener to the browser`
+                        :(trigger) when user touches trackpad, or 'scrollBy' func moves the container => scroll has changed
+                        :(reaction) updateScrollStatus, runs immediatelly in response to trigger
+
+note: 'useEffect'
+        'usually useEffect runs when a React State or a Prop changes
+        (the stuff [] at the end). But here the browser s scroll isn t a React state
+        but a physical property of HTML'
+
+        : cuz React doesn t know when we scroll, we used useEffect to attach a Native Browser React Event
+
+        : 'The flow'
+                - Mount, component renders first time
+                - Attach, useEffect runs once
+                (every time this div scrolls, run 'updatedScrollStatus')
+                - The event, user clicks or swipes. The div moves
+                - The callback, the browser see movement and run updateScrollStatus()
+                - State update, 'updateScrollStatus' reads the new 'scrollLeft', calculates and calls 'setScrollStatus'
+                - React sees the state changed and updates the buttons(hide/show)
+
+        : 'Cleanup'
+                `return () => container.removeEventListener("scroll", updateScrollStatus)`
+                - if component disappears from DOM (user goes to a different page), stop listening scroll
+
+note: 'types of scrolling'
+
+        : 'Buttons' - active scroll
+        (the 'scroll' function is responsible for)
+
+        : 'Swipe' - manual/passive scroll
+        (css, overflow-x: auto)
+
+note: 'restrict horizontal scrolling(swipe)'
+        `overflow-x: hidden`

@@ -1,0 +1,25 @@
+.arrowButton {
+  display: flex;
+  border: none;
+  background: none;
+  cursor: pointer;
+  align-self: center;
+  width: 48px;
+  height: 48px;
+}
+
+.arrowButton {
+  /* ... your existing styles ... */
+  transition:
+    transform 0.1s ease,
+    background-color 0.1s ease;
+}
+
+.arrowButton:active {
+  /* color: green; */
+  background-color: #3e8e41;
+}
+
+.right {
+  transform: scaleX(-1);
+}
