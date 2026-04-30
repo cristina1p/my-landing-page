@@ -1,0 +1,58 @@
+/* shared text classes */
+
+/* Titles */
+.titleHero {
+  font-size: 72px;
+  font-weight: 800; /* Extra Bold */
+  line-height: 1.1;
+}
+
+.titleSection {
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.titleSubSection {
+  font-size: 32px;
+  font-weight: 700; /* Bold */
+}
+
+.titleCard {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.textCard {
+  font-size: 24px;
+}
+
+.textMain {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.textSmall {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.textMicro {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* UI Elements */
+.navItem {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.buttonLarge {
+  font-size: 24px;
+  font-weight: 500;
+}

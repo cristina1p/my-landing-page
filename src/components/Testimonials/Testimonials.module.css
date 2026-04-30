@@ -1,0 +1,30 @@
+.testimonialContainer {
+  position: relative;
+  width: 100%;
+  height: 766px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color-accent);
+  padding: 80px 80px;
+  margin: -80px -80px;
+  gap: 80px;
+}
+
+.title {
+  background: var(--text-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.decorRight {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.decorLeft {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}

@@ -1,0 +1,48 @@
+.testimonialCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 756px;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  padding: 48px 48px;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+.headerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.quote {
+  text-align: center;
+  color: var(--text-main);
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.avatarCard {
+  width: 64px;
+  height: 64px;
+}
+
+.authorMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authorRole {
+  color: var(--text-muted);
+  font-weight: 300;
+}

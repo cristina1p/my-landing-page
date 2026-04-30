@@ -5,28 +5,32 @@
   --accent-color: #86198f;
   --bg-color: #ffffff;
   --bg-color-secondary: #f1f5f9;
+  --bg-color-accent: #fdf4ff;
   --text-gradient: linear-gradient(90deg, #c026d3 0%, #701a75 100%);
   --text-main: #0f172a;
-  --text-muted: #545e6c;
-
+  --text-muted: #475569;
   --input-border: #cbd5e1;
   --input-text: #475569;
-  --input-shadow:
-    0 10px 15px -3px rgba(71, 71, 71, 0.25), 0 0 6px 0 rgba(61, 61, 61, 0.7);
-
-  --input-shadow-focus:
-    0 10px 15px -3px rgba(225, 81, 187, 0.25), 0 0 6px 0 rgba(148, 23, 186, 0.7);
-
-  /* Font Styles */
-  --font-main: "Roboto", sans-serif;
 
   /* Spacing/Sizes */
   --container-width: 1440px;
   --border-radius: 8px;
 
-  /* card */
+  /* Font Styles */
+  --font-main: "Roboto", sans-serif;
+
+  /* Button */
+  --button-shadow:
+    /* 0 10px 15px -3px rgba(71, 71, 71, 0.25), 0 0 6px 0 rgba(61, 61, 61, 0.7); */
+    0 10px 15px -3px #0000001a, 0 0 6px 0 #00000012;
+
+  --button-shadow-focus:
+    0 10px 15px -3px rgba(225, 81, 187, 0.25), 0 0 6px 0 rgba(148, 23, 186, 0.7);
+
+  /* Card */
   --card-shadow:
-    0 4px 0px -1px hsla(0, 0%, 0%, 0.1), 0 0 4px 0 hsla(0, 0%, 0%, 0.7);
+    /* 0 4px 0px -1px hsla(0, 0%, 0%, 0.1), 0 0 4px 0 hsla(0, 0%, 0%, 0.7); */
+    0 4px 6px -1px #0000001a, 0 0 4px 0 #00000012;
 }
 
 body {
@@ -34,19 +38,17 @@ body {
   margin: 0;
 }
 
-/* h1,
+h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p {
-  margin: 0;
-} */
-
-h5,
+p,
 span {
   margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 button {

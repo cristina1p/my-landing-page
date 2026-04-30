@@ -7,8 +7,6 @@
 
 .logo {
   color: var(--text-main);
-  font-size: 16px;
-  font-weight: bold;
 }
 
 .accent {
@@ -19,15 +17,12 @@
   display: flex;
   gap: 16px;
   align-items: center;
-  /* justify-content: flex-end; */
   margin-left: auto;
 }
 
 .links a {
   text-decoration: none;
   color: var(--text-main);
-  font-size: 16px;
-  font-weight: 400;
 }
 
 .links a:hover {

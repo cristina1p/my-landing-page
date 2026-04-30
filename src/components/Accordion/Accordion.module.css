@@ -12,7 +12,7 @@
   border-radius: 10px;
   border: none;
   background-color: var(--bg-color);
-  box-shadow: var(--input-shadow);
+  box-shadow: var(--button-shadow);
   padding: 32px;
   z-index: 2;
   position: relative;
@@ -20,7 +20,7 @@
 }
 
 .triggerActive {
-  box-shadow: var(--input-shadow-focus);
+  box-shadow: var(--button-shadow-focus);
 }
 
 .triggerActive svg {
@@ -34,7 +34,6 @@
   transition: all 0.3s ease-in-out;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding: 0 32px;
 }
 
 /* expanded state*/
@@ -42,6 +41,6 @@
   max-height: 200px; /* Use a fixed large value, not 100% */
   opacity: 1;
   padding: 20px 32px; /* Add padding here so text isn't touching edges */
-  box-shadow: var(--input-shadow);
-  margin-top: -5px;
+  box-shadow: var(--button-shadow);
+  /* margin-top: -5px; */
 }

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { StoryCard } from "./StoryCard";
 import styles from "./StorySection.module.css";
+import typo from "../../styles/typography.module.css";
 import { cardStories } from "./data";
 import { ArrowButton } from "./ArrowButton";
 
@@ -60,8 +61,10 @@ export function StorySection() {
   return (
     <section className={styles.storiesConatiner}>
       <div className={styles.textGroup}>
-        <h2 className={styles.title}>Stories from our users</h2>
-        <p>
+        <h2 className={`${styles.title} ${typo.titleSection}`}>
+          Stories from our users
+        </h2>
+        <p className={typo.textMain}>
           Et pulvinar nec interdum integer id urna molestie porta nullam. A,
           donec ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor
           pharetra sed in mauris elementum sollicitudin.

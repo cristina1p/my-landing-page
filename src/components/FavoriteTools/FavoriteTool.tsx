@@ -8,6 +8,7 @@ import { NetworkIcon } from "../Icons/Network";
 import { SavingsIcon } from "../Icons/Savings";
 import { TargetIcon } from "../Icons/Target";
 import styles from "./FavoriteTools.module.css";
+import typo from "../../styles/typography.module.css";
 
 interface Tool {
   id: number;
@@ -87,8 +88,10 @@ export function FavoriteTools() {
   return (
     <section className={styles.favoriteTools}>
       <div className={styles.textGroup}>
-        <h2 className={styles.title}>Your favourite tools</h2>
-        <p>
+        <h2 className={`${styles.title} ${typo.titleSection}`}>
+          Your favourite tools
+        </h2>
+        <p className={typo.textMain}>
           In risus nec molestie at in pulvinar tellus. At integer id condimentum
           gravida nisi nisl. Sem vitae porttitor arcu congue sem erat et sit
           faucibus. Sollicitudin elit gravida tellus mattis porttitor.
@@ -100,8 +103,8 @@ export function FavoriteTools() {
           return (
             <div key={tool.id} className={styles.card}>
               {IconComponent && <IconComponent />}
-              <h4>{tool.title}</h4>
-              <p>{tool.description}</p>
+              <h4 className={typo.titleCard}>{tool.title}</h4>
+              <p className={typo.textSmall}>{tool.description}</p>
             </div>
           );
         })}

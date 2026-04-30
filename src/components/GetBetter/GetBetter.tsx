@@ -1,13 +1,16 @@
 import { Button } from "../Button/Button";
 import styles from "./GetBetter.module.css";
+import typo from "../../styles/typography.module.css";
 
 export function GetBetter() {
   return (
     <section className={styles.getBetter}>
       <div className={styles.content}>
         <div className={styles.textGroup}>
-          <h2 className={styles.title}>Get better everyday</h2>
-          <p>
+          <h2 className={`${styles.title} ${typo.titleSection}`}>
+            Get better everyday
+          </h2>
+          <p className={typo.textMain}>
             Et pulvinar nec interdum integer id urna molestie porta nullam. A,
             donec ornare sed turpis pulvinar purus maecenas quam a. Erat
             porttitor pharetra sed in mauris elementum sollicitudin.
