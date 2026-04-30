@@ -2,6 +2,7 @@ import { AccordionItem } from "../Accordion/Accordion";
 import { FAQItemProps } from "../types/types";
 import styles from "./FAQ.module.css";
 import typo from "../../styles/typography.module.css";
+import module from "../../styles/layout.module.css";
 import { useState, useRef, useEffect } from "react";
 
 const questionsData: FAQItemProps[] = [
@@ -71,9 +72,9 @@ export function FAQ() {
   }, []);
 
   return (
-    <section className={styles.faqSection}>
-      <div className={styles.textGroup}>
-        <h2 className={`${styles.title} ${typo.titleSection}`}>
+    <section className={`${styles.faqSection} ${module.sectionContent}`}>
+      <div className={`${styles.textGroup} ${module.textGroup}`}>
+        <h2 className={`${module.title} ${typo.titleSection}`}>
           Frequently asked questions
         </h2>
         <p className={typo.textMain}>

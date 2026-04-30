@@ -1,24 +1,11 @@
 .content {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 56px 0px 80px;
   gap: 24px;
 }
 
 .textGroup {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
-
-.title {
-  background: var(--text-gradient);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .content p {

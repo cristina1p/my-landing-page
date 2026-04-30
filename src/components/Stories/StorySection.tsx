@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { StoryCard } from "./StoryCard";
 import styles from "./StorySection.module.css";
 import typo from "../../styles/typography.module.css";
+import module from "../../styles/layout.module.css";
 import { cardStories } from "./data";
 import { ArrowButton } from "./ArrowButton";
 
@@ -59,9 +60,9 @@ export function StorySection() {
   };
 
   return (
-    <section className={styles.storiesConatiner}>
-      <div className={styles.textGroup}>
-        <h2 className={`${styles.title} ${typo.titleSection}`}>
+    <section className={`${styles.storiesConatiner} ${module.sectionContent}`}>
+      <div className={`${styles.textGroup} ${module.textGroup}`}>
+        <h2 className={`${module.title} ${typo.titleSection}`}>
           Stories from our users
         </h2>
         <p className={typo.textMain}>

@@ -1,0 +1,19 @@
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* FavoriteTools, getBetter, Hero, Story Section*/
+.title {
+  background: var(--text-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
