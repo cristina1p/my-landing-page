@@ -194,3 +194,7 @@ note: 'types of scrolling'
 
 note: 'restrict horizontal scrolling(swipe)'
         `overflow-x: hidden`
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+todo: 'add css for buttons in the testimonials section'

@@ -51,6 +51,12 @@ span {
   font-weight: inherit;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 button {
   appearance: none; /* Removes platform-specific styling */
   background: none; /* Removes the default grey gradient */
