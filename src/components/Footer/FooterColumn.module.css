@@ -18,3 +18,11 @@ a {
   text-decoration: none;
   color: var(--text-muted);
 }
+
+a:hover {
+  color: var(--primary-color);
+}
+
+a:hover svg path {
+  fill: var(--primary-color);
+}

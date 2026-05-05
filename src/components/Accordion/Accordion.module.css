@@ -1,3 +1,6 @@
+.itemContainer:hover button {
+  color: var(--accent-color);
+}
 .itemContainer span {
   font-size: 20px;
   font-weight: 500;
@@ -28,8 +31,8 @@
 }
 /* closed state*/
 .contentWrapper {
-  max-height: 0; /* squashes element to take 0*/
-  opacity: 0; /* invisible elemnt*/
+  max-height: 0;
+  opacity: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   border-bottom-left-radius: 10px;
@@ -40,7 +43,6 @@
 .contentOpen {
   max-height: 200px; /* Use a fixed large value, not 100% */
   opacity: 1;
-  padding: 20px 32px; /* Add padding here so text isn't touching edges */
+  padding: 32px 32px; /* Add padding here so text isn't touching edges */
   box-shadow: var(--button-shadow);
-  /* margin-top: -5px; */
 }

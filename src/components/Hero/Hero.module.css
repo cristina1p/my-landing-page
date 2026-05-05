@@ -26,6 +26,10 @@
   font-weight: 400;
 }
 
+.input:focus {
+  outline: 1px solid var(--accent-color);
+}
+
 .imgContainer {
   flex: 1;
   display: flex;

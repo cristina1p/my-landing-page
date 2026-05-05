@@ -66,3 +66,7 @@ button {
   cursor: pointer; /* Adds the hand icon back (highly recommended) */
   outline: inherit;
 }
+
+input:focus {
+  outline: none;
+}
