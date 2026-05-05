@@ -4,7 +4,7 @@
   height: 24px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .hamburgerButton {
     display: none;
   }

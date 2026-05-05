@@ -7,7 +7,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .container {
     padding: 0px 80px;
   }
