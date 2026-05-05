@@ -1,0 +1,11 @@
+.hamburgerButton {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 1440px) {
+  .hamburgerButton {
+    display: none;
+  }
+}

@@ -1,12 +1,14 @@
+/* mobile */
 .nav {
   display: flex;
   justify-content: space-between;
+  padding: 16px;
   align-items: center;
-  padding: 24px 0px;
 }
 
 .logo {
   color: var(--text-main);
+  font-size: 32px !important;
 }
 
 .accent {
@@ -14,17 +16,28 @@
 }
 
 .links {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  margin-left: auto;
+  display: none;
 }
 
-.links a {
-  text-decoration: none;
-  color: var(--text-main);
-}
+/* desktop */
+@media (min-width: 1440px) {
+  .nav {
+    padding: 24px 0px;
+  }
 
-.links a:hover {
-  color: var(--primary-color);
+  .links {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .links a {
+    text-decoration: none;
+    color: var(--text-main);
+  }
+
+  .links a:hover {
+    color: var(--primary-color);
+  }
 }

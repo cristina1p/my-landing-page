@@ -1,3 +1,17 @@
+/* Mobile*/
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+  .logo {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
 /* shared text classes */
 
 /* Titles */
@@ -45,11 +59,6 @@
 .navItem {
   font-size: 16px;
   font-weight: 500;
-}
-
-.logo {
-  font-size: 16px;
-  font-weight: 700;
 }
 
 .buttonLarge {
