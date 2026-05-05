@@ -1,9 +1,9 @@
+/* mobile */
 .content {
   justify-content: center;
-  padding: 56px 0px 80px;
+  padding: 48px 0px 24px;
   gap: 24px;
 }
-
 .textGroup {
   justify-content: center;
 }
@@ -20,9 +20,9 @@
 .input {
   color: var(--text-main);
   border: 1px solid var(--input-border);
-  border-radius: 26px;
+  border-radius: 19px;
   padding: 13px 24px;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -34,10 +34,30 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 8px;
 }
 
 .image {
   max-width: 100%;
   height: auto;
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  .content {
+    padding: 56px 0px 80px;
+  }
+
+  .inputGroup {
+    gap: 8px;
+  }
+
+  .input {
+    border-radius: 26px;
+    font-size: 24px;
+  }
+
+  .imgContainer {
+    margin-top: 80px;
+  }
 }

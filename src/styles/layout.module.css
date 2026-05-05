@@ -1,7 +1,16 @@
+/* mobile */
 .sectionContent {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0px 16px;
+}
+
+/* FavoriteTools, getBetter, Hero, Story Section*/
+.title {
+  background: var(--text-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .textGroup {
@@ -11,9 +20,9 @@
   gap: 24px;
 }
 
-/* FavoriteTools, getBetter, Hero, Story Section*/
-.title {
-  background: var(--text-gradient);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* desktop */
+@media (min-width: 1024px) {
+  .sectionContent {
+    padding: 0px;
+  }
 }

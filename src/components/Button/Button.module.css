@@ -1,9 +1,19 @@
+/* mobile */
+
 .primary-button {
   background-color: var(--primary-color);
   color: white;
   padding: 12px 28px;
   border: none;
-  border-radius: 26px;
+  border-radius: 19px;
   font-family: inherit;
   cursor: pointer;
+}
+
+/* desktop */
+
+@media (min-width: 1024px) {
+  .primary-button {
+    border-radius: 26px;
+  }
 }

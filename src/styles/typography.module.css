@@ -4,22 +4,51 @@
   font-weight: 700;
 }
 
+.titleHero {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+  min-width: 336px;
+}
+
+.textMain {
+  font-size: 16px;
+  font-weight: 400;
+  min-width: 361px;
+  text-align: center;
+}
+
+.buttonLarge {
+  font-size: 16px;
+  font-weight: 500;
+}
+
 /* Desktop */
 @media (min-width: 1024px) {
   .logo {
     font-size: 16px;
     font-weight: 700;
   }
+
+  .titleHero {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+
+  .textMain {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .buttonLarge {
+    font-size: 24px;
+    font-weight: 500;
+  }
 }
 
 /* shared text classes */
-
 /* Titles */
-.titleHero {
-  font-size: 72px;
-  font-weight: 800; /* Extra Bold */
-  line-height: 1.1;
-}
 
 .titleSection {
   font-size: 56px;
@@ -40,11 +69,6 @@
   font-size: 24px;
 }
 
-.textMain {
-  font-size: 20px;
-  font-weight: 400;
-}
-
 .textSmall {
   font-size: 18px;
   font-weight: 400;
@@ -58,10 +82,5 @@
 /* UI Elements */
 .navItem {
   font-size: 16px;
-  font-weight: 500;
-}
-
-.buttonLarge {
-  font-size: 24px;
   font-weight: 500;
 }
