@@ -22,7 +22,7 @@ export function AccordionItem({ isOpen, onToggle, item }: AccordionItemProps) {
       <div
         className={`${styles.contentWrapper} ${isOpen ? styles.contentOpen : ""}`}
       >
-        <p>{content}</p>
+        <p className={styles.description}> {content}</p>
       </div>
     </div>
   );

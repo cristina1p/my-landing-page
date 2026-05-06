@@ -1,12 +1,12 @@
+/* mobile */
+
 .faqSection {
-  padding: 80px 80px;
-  gap: 80px;
+  padding: 48px 16px;
+  gap: 32px;
   background-color: var(--bg-color-secondary);
-  margin: -80px -80px;
 }
 
 .textGroup {
-  max-width: 700px;
   justify-content: center;
 }
 
@@ -20,4 +20,18 @@
   flex-direction: column;
   width: 100%;
   gap: 24px;
+}
+
+/* desktop */
+
+@media (min-width: 1024px) {
+  .faqSection {
+    padding: 80px 80px;
+    gap: 80px;
+    margin: -80px -80px;
+  }
+
+  .textGroup {
+    max-width: 700px;
+  }
 }

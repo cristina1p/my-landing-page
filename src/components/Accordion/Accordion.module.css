@@ -1,8 +1,11 @@
+/* mobile */
+
 .itemContainer:hover button {
   color: var(--accent-color);
 }
+
 .itemContainer span {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -16,10 +19,11 @@
   border: none;
   background-color: var(--bg-color);
   box-shadow: var(--button-shadow);
-  padding: 32px;
+  padding: 16px;
   z-index: 2;
   position: relative;
   cursor: pointer;
+  gap: 16px;
 }
 
 .triggerActive {
@@ -29,6 +33,7 @@
 .triggerActive svg {
   transform: rotate(180deg);
 }
+
 /* closed state*/
 .contentWrapper {
   max-height: 0;
@@ -39,10 +44,34 @@
   border-bottom-right-radius: 10px;
 }
 
-/* expanded state*/
 .contentOpen {
-  max-height: 200px; /* Use a fixed large value, not 100% */
+  max-height: 200px;
   opacity: 1;
-  padding: 32px 32px; /* Add padding here so text isn't touching edges */
+  padding: 16px 16px;
   box-shadow: var(--button-shadow);
+}
+
+.description {
+  text-align: center;
+}
+
+/* desktop */
+
+@media (min-width: 1024px) {
+  .itemContainer span {
+    font-size: 20px;
+  }
+
+  .trigger {
+    padding: 32px;
+    gap: 0;
+  }
+
+  .contentOpen {
+    padding: 32px 32px;
+  }
+
+  .description {
+    text-align: start;
+  }
 }
