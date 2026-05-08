@@ -28,6 +28,31 @@
   font-weight: 700;
 }
 
+.titleSubSection {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.textCard {
+  font-size: 18px;
+}
+
+.textSmall {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.textMicro {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* UI Elements */
+.navItem {
+  font-size: 16px;
+  font-weight: 500;
+}
+
 @media (min-width: 480px) {
   .titleHero {
     font-size: 48px;
@@ -39,8 +64,17 @@
     font-weight: 700;
   }
 
+  /* .titleSubSection {
+    font-size: 32px;
+    font-weight: 700;
+  } */
+
   .textMain {
     max-width: 700px;
+  }
+
+  .textCard {
+    font-size: 22px;
   }
 }
 
@@ -71,37 +105,21 @@
     font-size: 56px;
     font-weight: 800;
   }
+
+  .titleSubSection {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .titleCard {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .textCard {
+    font-size: 24px;
+  }
 }
 
 /* shared text classes */
 /* Titles */
-
-.titleSubSection {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.titleCard {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.textCard {
-  font-size: 24px;
-}
-
-.textSmall {
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.textMicro {
-  font-size: 14px;
-  font-weight: 400;
-}
-
-/* UI Elements */
-.navItem {
-  font-size: 16px;
-  font-weight: 500;
-}
