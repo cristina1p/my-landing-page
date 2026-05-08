@@ -1,5 +1,5 @@
 .arrowButton {
-  display: flex;
+  display: none;
   border: none;
   background: none;
   cursor: pointer;
@@ -12,6 +12,13 @@
     transform 0.1s ease,
     background-color 0.1s ease;
 }
+
+@media (min-width: 480px) {
+  .arrowButton {
+    display: flex;
+  }
+}
+
 .right {
   transform: scaleX(-1);
 }

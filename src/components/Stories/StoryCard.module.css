@@ -1,7 +1,7 @@
 .storyCard {
   position: relative;
-  width: 266px;
-  height: 300px;
+  width: 320px;
+  height: auto;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: var(--card-shadow);
@@ -38,4 +38,11 @@
   gap: 4px;
   font-size: 14px;
   color: var(--text-muted);
+}
+
+@media (min-width: 480px) {
+  .storyCard {
+    width: 266px;
+    height: 300px;
+  }
 }
