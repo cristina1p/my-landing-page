@@ -32,6 +32,8 @@
 
 .leftButton,
 .rightButton {
+  display: flex;
+
   background-color: var(--bg-color);
 }
 
