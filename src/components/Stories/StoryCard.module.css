@@ -6,6 +6,7 @@
   overflow: hidden;
   box-shadow: var(--card-shadow);
   flex-shrink: 0;
+  scroll-snap-align: start;
 }
 
 .imgCard {
