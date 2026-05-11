@@ -9,11 +9,11 @@ interface TestimonialCardProps {
 export function TestimonialCard({ testimonial }: TestimonialCardProps) {
   return (
     <div className={styles.testimonialCard}>
-      <div className={styles.headerCard}>
-        <h2 className={`${typo.titleSubSection} ${styles.titleSubSection}`}>
+      <div className={styles.cardHeader}>
+        <h2 className={`${typo.cardTitle} ${styles.cardTitle}`}>
           {testimonial.title}
         </h2>
-        <p className={`${typo.textCard} ${styles.quote}`}>
+        <p className={`${typo.cardText} ${styles.quote}`}>
           {testimonial.quote}
         </p>
       </div>

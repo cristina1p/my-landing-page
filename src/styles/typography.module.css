@@ -27,12 +27,12 @@
   font-weight: 700;
 }
 
-.titleSubSection {
+.cardTitle {
   font-size: 24px;
   font-weight: 700;
 }
 
-.textCard {
+.cardText {
   font-size: 18px;
 }
 
@@ -67,7 +67,7 @@
     max-width: 700px;
   }
 
-  .textCard {
+  .cardText {
     font-size: 22px;
   }
 }
@@ -99,7 +99,7 @@
     font-weight: 800;
   }
 
-  .titleSubSection {
+  .cardTitle {
     font-size: 32px;
     font-weight: 700;
   }
@@ -109,7 +109,7 @@
     font-weight: 700;
   }
 
-  .textCard {
+  .cardText {
     font-size: 24px;
   }
 }

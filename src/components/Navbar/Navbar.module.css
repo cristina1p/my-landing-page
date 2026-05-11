@@ -3,6 +3,7 @@
   justify-content: space-between;
   padding: 16px 0;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -15,6 +16,30 @@
 }
 
 .links {
+  /* mobile hidden state */
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+}
+.links a {
+  padding: 4px 4px 4px 0;
+  font-size: 18px;
+}
+
+.links a:hover {
+  background-color: var(--bg-color-accent);
+  padding: 4px 4px 4px;
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+}
+
+.navButton {
   display: none;
 }
 
@@ -28,6 +53,10 @@
     gap: 16px;
     align-items: center;
     margin-left: auto;
+    position: static;
+    width: auto;
+    flex-direction: row;
+    background-color: var(--bg-color);
   }
 
   .links a {
@@ -37,5 +66,9 @@
 
   .links a:hover {
     color: var(--primary-color);
+  }
+
+  .navButton {
+    display: flex;
   }
 }
