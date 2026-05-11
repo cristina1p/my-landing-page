@@ -1,9 +1,9 @@
 .nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 16px 0;
   align-items: center;
-  position: relative;
+  padding: 16px 0;
 }
 
 .logo {

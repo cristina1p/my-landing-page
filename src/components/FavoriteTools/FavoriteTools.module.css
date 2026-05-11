@@ -19,8 +19,8 @@
   gap: 16px;
 }
 .descriptionCard {
-  text-align: center;
   min-width: 200px;
+  text-align: center;
 }
 @media (min-width: 480px) {
   .gridContainer {

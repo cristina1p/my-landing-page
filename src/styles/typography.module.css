@@ -4,16 +4,16 @@
 }
 
 .titleHero {
+  min-width: 336px;
   font-size: 32px;
   font-weight: 700;
   line-height: 1.1;
-  min-width: 336px;
 }
 
 .textMain {
+  min-width: 361px;
   font-size: 16px;
   font-weight: 400;
-  min-width: 361px;
   text-align: center;
 }
 
