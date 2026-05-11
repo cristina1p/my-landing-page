@@ -19,8 +19,8 @@ export function Testimonials() {
     <section
       className={`${styles.testimonialContainer} ${layout.sectionContent}`}
     >
-      <img src={shapeRight} className={styles.decorRight} />
-      <img src={shapeLeft} className={styles.decorLeft} />
+      <img src={shapeRight} className={styles.decor} data-side="right" />
+      <img src={shapeLeft} className={styles.decor} data-side="left" />
 
       <h2 className={`${layout.title} ${typo.titleSection}`}>
         What other users say
