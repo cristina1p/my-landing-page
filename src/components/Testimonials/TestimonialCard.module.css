@@ -9,6 +9,7 @@
   align-items: center;
   gap: 8px;
   max-width: 756px;
+  min-height: 454px;
   padding: 24px;
   box-sizing: border-box;
   background-color: var(--bg-color);
