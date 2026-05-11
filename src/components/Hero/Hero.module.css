@@ -17,12 +17,12 @@
 }
 
 .input {
-  color: var(--text-main);
   border: 1px solid var(--input-border);
-  border-radius: 19px;
   padding: 13px 24px;
   font-size: 16px;
   font-weight: 400;
+  color: var(--text-main);
+  border-radius: 19px;
 }
 
 .input:focus {
@@ -30,8 +30,8 @@
 }
 
 .imgContainer {
-  flex: 1;
   display: flex;
+  flex: 1;
   justify-content: center;
   margin-top: 8px;
 }

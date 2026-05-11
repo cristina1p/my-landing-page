@@ -17,10 +17,10 @@
 
 .links {
   /* mobile hidden state */
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
+  display: none;
   width: 100%;
   background-color: var(--bg-color);
 }
@@ -30,8 +30,8 @@
 }
 
 .links a:hover {
-  background-color: var(--bg-color-accent);
   padding: 4px 4px 4px;
+  background-color: var(--bg-color-accent);
 }
 
 .open {
@@ -49,13 +49,13 @@
   }
 
   .links {
+    position: static;
     display: flex;
+    flex-direction: row;
     gap: 16px;
     align-items: center;
     margin-left: auto;
-    position: static;
     width: auto;
-    flex-direction: row;
     background-color: var(--bg-color);
   }
 

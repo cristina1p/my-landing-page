@@ -8,20 +8,20 @@
 }
 
 .trigger {
-  width: 100%;
-  height: 88px;
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 10px;
-  border: none;
-  background-color: var(--bg-color);
-  box-shadow: var(--button-shadow);
-  padding: 16px;
-  z-index: 2;
-  position: relative;
-  cursor: pointer;
   gap: 16px;
+  width: 100%;
+  height: 88px;
+  border: none;
+  padding: 16px;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: var(--button-shadow);
+  cursor: pointer;
 }
 
 .triggerActive {
@@ -34,18 +34,18 @@
 
 /* closed state*/
 .contentWrapper {
+  overflow: hidden;
   max-height: 0;
   opacity: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .contentOpen {
   max-height: 200px;
-  opacity: 1;
   padding: 16px 16px;
+  opacity: 1;
   box-shadow: var(--button-shadow);
 }
 

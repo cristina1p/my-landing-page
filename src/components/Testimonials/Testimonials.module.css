@@ -1,11 +1,11 @@
 .testimonialContainer {
   position: relative;
-  background-color: var(--bg-color-accent);
   padding: 0 16px;
-  margin: 0 -16px;
   padding-top: 80px;
   padding-bottom: 80px;
+  margin: 0 -16px;
   gap: 30px;
+  background-color: var(--bg-color-accent);
 }
 
 .decor {
@@ -26,8 +26,8 @@
 }
 
 .testimonialWrapper {
-  gap: 12px;
   display: flex;
+  gap: 12px;
 }
 
 .leftButton,

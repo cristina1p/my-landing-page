@@ -54,13 +54,13 @@ ul {
 }
 
 button {
-  appearance: none; /* Removes platform-specific styling */
-  background: none; /* Removes the default grey gradient */
   border: none; /* Removes the 2px inset/outset border */
   padding: 0; /* Removes default internal spacing */
   font: inherit; /* Forces it to use the parent's font */
-  cursor: pointer; /* Adds the hand icon back (highly recommended) */
+  appearance: none; /* Removes platform-specific styling */
+  background: none; /* Removes the default grey gradient */
   outline: inherit;
+  cursor: pointer; /* Adds the hand icon back (highly recommended) */
 }
 
 input:focus {
