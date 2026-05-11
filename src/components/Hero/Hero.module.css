@@ -35,8 +35,7 @@
   justify-content: center;
   margin-top: 8px;
 }
-
-.image {
+picture img {
   max-width: 100%;
   height: auto;
 }

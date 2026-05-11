@@ -3,6 +3,9 @@ import typo from "../../styles/typography.module.css";
 import layout from "../../styles/layout.module.css";
 
 import { Button } from "../Button/Button";
+import heroDesktop from "../../assets/hero-desktop.webp";
+import heroTablet from "../../assets/hero-tablet.webp";
+import heroMobile from "../../assets/hero-mobile.webp";
 
 export function Hero() {
   return (
@@ -29,11 +32,24 @@ export function Hero() {
       </div>
 
       <div className={styles.imgContainer}>
-        <img
-          src="src/assets/hero.png"
-          alt="Hero Illustration"
-          className={styles.image}
-        />
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcSet={heroDesktop}
+          />
+
+          <source
+            media="(min-width: 768px)"
+            srcSet={heroTablet}
+          />
+
+          <img
+            src={heroMobile}
+            alt="Project Hero"
+            loading="eager"
+            fetchPriority="high"
+          />
+        </picture>
       </div>
     </section>
   );
