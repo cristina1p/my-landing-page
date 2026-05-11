@@ -17,6 +17,7 @@ export function Testimonials() {
 
   return (
     <section
+      id="testimonials"
       className={`${styles.testimonialContainer} ${layout.sectionContent}`}
     >
       <img src={shapeRight} className={styles.decor} data-side="right" />

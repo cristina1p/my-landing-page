@@ -87,7 +87,10 @@ const toolsData: Tool[] = [
 
 export function FavoriteTools() {
   return (
-    <section className={`${styles.favoriteTools} ${layout.sectionContent}`}>
+    <section
+      id="features"
+      className={`${styles.favoriteTools} ${layout.sectionContent}`}
+    >
       <div className={`${layout.textGroup} ${styles.textGroup}`}>
         <h2 className={`${layout.title} ${typo.titleSection}`}>
           Your favourite tools

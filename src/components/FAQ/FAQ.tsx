@@ -72,7 +72,10 @@ export function FAQ() {
   }, []);
 
   return (
-    <section className={`${styles.faqSection} ${layout.sectionContent}`}>
+    <section
+      id="faq"
+      className={`${styles.faqSection} ${layout.sectionContent}`}
+    >
       <div className={`${styles.textGroup} ${layout.textGroup}`}>
         <h2 className={`${layout.title} ${typo.titleSection}`}>
           Frequently asked questions

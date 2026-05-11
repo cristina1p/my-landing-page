@@ -11,6 +11,11 @@ export function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
+
+  // Explicit close dropdown menu
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
   return (
     <nav className={styles.nav}>
       <div className={`${styles.logo} ${type.logo} ${styles.rightNav}`}>
@@ -21,21 +26,24 @@ export function Navbar() {
         <HamburgerMenu isOpen={isMenuOpen} toggle={toggleMenu} />
 
         {/* Apply conditional class for mobile visibility */}
-        <div className={`${styles.links} ${isMenuOpen ? styles.open : ""}`}>
-          <a className={type.navItem} href="#explore">
-            Explore
-          </a>
-          <a className={type.navItem} href="#solutions">
-            Solutions
-          </a>
+        <div
+          className={`${styles.links} ${isMenuOpen ? styles.open : ""}`}
+          onClick={closeMenu}
+        >
           <a className={type.navItem} href="#about">
             About
           </a>
-          <a className={type.navItem} href="#blog">
-            Blog
+          <a className={type.navItem} href="#features">
+            Features
           </a>
-          <a className={type.navItem} href="#explore">
-            Log In
+          <a className={type.navItem} href="#testimonials">
+            Testimonials
+          </a>
+          <a className={type.navItem} href="#stories">
+            Stories
+          </a>
+          <a className={type.navItem} href="#faq">
+            FAQ
           </a>
           <Button className={styles.navButton} text="Start Now" />
         </div>
