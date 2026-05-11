@@ -9,7 +9,7 @@ import heroMobile from "../../assets/hero-mobile.webp";
 
 export function Hero() {
   return (
-    <section className={`${styles.content} ${layout.sectionContent}`}>
+    <section id="hero" className={`${styles.content} ${layout.sectionContent}`}>
       <div className={`${styles.textGroup} ${layout.textGroup}`}>
         <h1
           className={`${typo.gradientText} ${typo.titleHero} ${layout.title}`}
@@ -33,15 +33,9 @@ export function Hero() {
 
       <div className={styles.imgContainer}>
         <picture>
-          <source
-            media="(min-width: 1024px)"
-            srcSet={heroDesktop}
-          />
+          <source media="(min-width: 1024px)" srcSet={heroDesktop} />
 
-          <source
-            media="(min-width: 768px)"
-            srcSet={heroTablet}
-          />
+          <source media="(min-width: 768px)" srcSet={heroTablet} />
 
           <img
             src={heroMobile}
