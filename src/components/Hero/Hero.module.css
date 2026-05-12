@@ -2,6 +2,7 @@
   justify-content: center;
   padding: 48px 0px 24px;
   gap: 24px;
+  scroll-margin-top: 70px;
 }
 .textGroup {
   justify-content: center;
