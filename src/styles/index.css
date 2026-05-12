@@ -6,6 +6,7 @@
   --bg-color: #ffffff;
   --bg-color-secondary: #f1f5f9;
   --bg-color-accent: #fdf4ff;
+
   --text-gradient: linear-gradient(90deg, #c026d3 0%, #701a75 100%);
   --text-main: #0f172a;
   --text-muted: #475569;
@@ -24,6 +25,8 @@
 
   --button-shadow-focus:
     0 10px 15px -3px rgba(225, 81, 187, 0.25), 0 0 6px 0 rgba(148, 23, 186, 0.7);
+
+  --menu-shadow: 0 10px 15px -3px #2b1d2994, 0 0 6px 0 #7f1f7fc2;
 
   /* Card */
   --card-shadow: 0 4px 6px -1px #0000001a, 0 0 4px 0 #00000012;

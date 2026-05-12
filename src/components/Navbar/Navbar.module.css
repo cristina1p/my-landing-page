@@ -26,7 +26,7 @@
 }
 .links a {
   padding: 4px 4px 4px 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .links a:hover {
@@ -37,10 +37,20 @@
 .open {
   display: flex;
   flex-direction: column;
+  padding: 6px 0px 6px 10px;
+  border-radius: 4px;
+  background-color: var(--bg-color-accent);
+  box-shadow: var(--menu-shadow);
 }
 
 .navButton {
   display: none;
+}
+
+@media (min-width: 480px) {
+  .links a {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -57,6 +67,7 @@
     margin-left: auto;
     width: auto;
     background-color: var(--bg-color);
+    box-shadow: none;
   }
 
   .links a {
@@ -65,7 +76,7 @@
   }
 
   .links a:hover {
-    color: var(--primary-color);
+    background-color: var(--bg-color);
   }
 
   .navButton {
