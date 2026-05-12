@@ -2,7 +2,7 @@ import { Button } from "../Button/Button";
 import styles from "./Navbar.module.css";
 import type from "../../styles/typography.module.css";
 import { HamburgerMenu } from "./HamburgerMenu";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function Navbar() {
   // Define state, track visibility of the menu
@@ -12,12 +12,35 @@ export function Navbar() {
     setIsMenuOpen((prev) => !prev);
   };
 
+  // Create ref
+  const navRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    // Define listener function
+    const handleClickOutside = (event: MouseEvent) => {
+      // If click happened outside ref, close menu
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    // Only attach listener if menu is open
+    if (isMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+    // Remove the listener when menu closes or component unmounts
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMenuOpen]);
+
   // Explicit close dropdown menu
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
   return (
-    <nav className={styles.nav}>
+    <nav ref={navRef} className={styles.nav}>
       <a href="#hero">
         <div className={`${styles.logo} ${type.logo} ${styles.rightNav}`}>
           break<span className={styles.accent}>io</span>
