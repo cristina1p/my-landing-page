@@ -1,6 +1,7 @@
 .favoriteTools {
   padding: 48px 0;
   gap: 32px;
+  scroll-margin-top: 70px;
 }
 .textGroup p {
   color: var(--text-main);
@@ -24,11 +25,13 @@
   min-width: 200px;
   text-align: center;
 }
+
 @media (min-width: 1024px) {
   .favoriteTools {
     padding: 80px 0px;
     margin: 80px 0px;
     gap: 45px;
+    scroll-margin-top: 0;
   }
 
   .gridContainer {

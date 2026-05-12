@@ -55,7 +55,7 @@ export function Navbar() {
           className={`${styles.links} ${isMenuOpen ? styles.open : ""}`}
           onClick={closeMenu}
         >
-          <a className={type.navItem} href="#about">
+          <a className={type.navItem} href="#stories">
             About
           </a>
           <a className={type.navItem} href="#features">

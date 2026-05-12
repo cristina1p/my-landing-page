@@ -1,9 +1,14 @@
 .nav {
-  position: relative;
+  z-index: 100;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding: 16px;
+  background-color: var(--bg-color);
 }
 
 .logo {
@@ -55,7 +60,12 @@
 
 @media (min-width: 1024px) {
   .nav {
-    padding: 24px 0px;
+    z-index: 0;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 16px 0px 0px 0px;
+    background-color: none;
   }
 
   .links {
