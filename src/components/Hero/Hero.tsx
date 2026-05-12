@@ -28,7 +28,10 @@ export function Hero() {
           name="name"
           className={styles.input}
         />
-        <Button className={typo.buttonLarge} text="Start Now" />
+        <Button
+          className={`${typo.buttonLarge} ${styles.button}`}
+          text="Start Now"
+        />
       </div>
 
       <div className={styles.imgContainer}>
