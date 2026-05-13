@@ -12,14 +12,20 @@ export function Navbar() {
     setIsMenuOpen((prev) => !prev);
   };
 
-  // Create ref
-  const navRef = useRef<HTMLElement>(null);
+  // Create refs
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const popoverRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Define listener function
     const handleClickOutside = (event: MouseEvent) => {
       // If click happened outside ref, close menu
-      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+
+      const isButtonRef = buttonRef.current?.contains(event.target as Node);
+      const isPopoverRef =
+        popoverRef.current && popoverRef.current.contains(event.target as Node);
+
+      if (!isButtonRef && !isPopoverRef) {
         setIsMenuOpen(false);
       }
     };
@@ -40,7 +46,7 @@ export function Navbar() {
   };
 
   return (
-    <nav ref={navRef} className={styles.nav}>
+    <nav className={styles.nav}>
       <a href="#hero">
         <div className={`${styles.logo} ${type.logo} ${styles.rightNav}`}>
           break<span className={styles.accent}>io</span>
@@ -48,26 +54,32 @@ export function Navbar() {
       </a>
       {/* Pass state and toggle function */}
       <div className={styles.leftNav}>
-        <HamburgerMenu isOpen={isMenuOpen} toggle={toggleMenu} />
+        <HamburgerMenu
+          isOpen={isMenuOpen}
+          toggle={toggleMenu}
+          ref={buttonRef}
+        />
 
         {/* Apply conditional class for mobile visibility */}
         <div
           className={`${styles.links} ${isMenuOpen ? styles.open : ""}`}
-          onClick={closeMenu}
+          ref={popoverRef}
         >
-          <a className={type.navItem} href="#stories">
+          {/* todo__: use an array */}
+          {/* todo__: put it in a list (ul > li) */}
+          <a onClick={closeMenu} className={type.navItem} href="#stories">
             About
           </a>
-          <a className={type.navItem} href="#features">
+          <a onClick={closeMenu} className={type.navItem} href="#features">
             Features
           </a>
-          <a className={type.navItem} href="#testimonials">
+          <a onClick={closeMenu} className={type.navItem} href="#testimonials">
             Testimonials
           </a>
-          <a className={type.navItem} href="#stories">
+          <a onClick={closeMenu} className={type.navItem} href="#stories">
             Stories
           </a>
-          <a className={type.navItem} href="#faq">
+          <a onClick={closeMenu} className={type.navItem} href="#faq">
             FAQ
           </a>
           <Button className={styles.navButton} text="Start Now" />
