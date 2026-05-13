@@ -47,7 +47,7 @@ export function Navbar() {
 
   return (
     <nav className={styles.nav}>
-      <a href="#hero">
+      <a onClick={closeMenu} href="#hero">
         <div className={`${styles.logo} ${type.logo} ${styles.rightNav}`}>
           break<span className={styles.accent}>io</span>
         </div>
