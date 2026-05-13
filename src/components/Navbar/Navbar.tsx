@@ -4,6 +4,19 @@ import type from "../../styles/typography.module.css";
 import { HamburgerMenu } from "./HamburgerMenu";
 import { useEffect, useRef, useState } from "react";
 
+interface NavLink {
+  label: string;
+  href: string;
+}
+
+const navLinks: NavLink[] = [
+  { label: "About", href: "#stories" },
+  { label: "Features", href: "#features" },
+  { label: "Testimonials", href: "#testimonials" },
+  { label: "Stories", href: "#stories" },
+  { label: "FAQ", href: "#faq" },
+];
+
 export function Navbar() {
   // Define state, track visibility of the menu
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -14,7 +27,7 @@ export function Navbar() {
 
   // Create refs
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const popoverRef = useRef<HTMLDivElement>(null);
+  const popoverRef = useRef<HTMLUListElement>(null);
 
   useEffect(() => {
     // Define listener function
@@ -61,29 +74,19 @@ export function Navbar() {
         />
 
         {/* Apply conditional class for mobile visibility */}
-        <div
+        <ul
           className={`${styles.links} ${isMenuOpen ? styles.open : ""}`}
           ref={popoverRef}
         >
-          {/* todo__: use an array */}
-          {/* todo__: put it in a list (ul > li) */}
-          <a onClick={closeMenu} className={type.navItem} href="#stories">
-            About
-          </a>
-          <a onClick={closeMenu} className={type.navItem} href="#features">
-            Features
-          </a>
-          <a onClick={closeMenu} className={type.navItem} href="#testimonials">
-            Testimonials
-          </a>
-          <a onClick={closeMenu} className={type.navItem} href="#stories">
-            Stories
-          </a>
-          <a onClick={closeMenu} className={type.navItem} href="#faq">
-            FAQ
-          </a>
+          {navLinks.map((link) => (
+            <li>
+              <a onClick={closeMenu} className={type.navItem} href={link.href}>
+                {link.label}
+              </a>
+            </li>
+          ))}
           <Button className={styles.navButton} text="Start Now" />
-        </div>
+        </ul>
       </div>
     </nav>
   );
