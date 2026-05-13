@@ -2,6 +2,9 @@ import { Button } from "../Button/Button";
 import styles from "./GetBetter.module.css";
 import typo from "../../styles/typography.module.css";
 import layout from "../../styles/layout.module.css";
+import imgDesktop from "../../assets/desktop.png";
+import imgMobile from "../../assets/mobile.png";
+import imgCard from "../../assets/card.png";
 
 export function GetBetter() {
   return (
@@ -19,19 +22,11 @@ export function GetBetter() {
       </div>
 
       <div className={styles.imagesContainer}>
-        <img
-          className={styles.desktop}
-          src="src/assets/desktop.png"
-          alt="Dashboard"
-        />
+        <img className={styles.desktop} src={imgDesktop} alt="Dashboard" />
 
-        <img
-          className={styles.mobile}
-          src="src/assets/mobile.png"
-          alt="Mobile"
-        />
+        <img className={styles.mobile} src={imgMobile} alt="Mobile" />
 
-        <img className={styles.card} src="src/assets/card.png" alt="Card" />
+        <img className={styles.card} src={imgCard} alt="Card" />
       </div>
     </section>
   );
