@@ -15,7 +15,7 @@ export function FooterColumn({ title, links }: FooterColumnProps) {
   return (
     <div className={styles.footerColumn}>
       <h3 className={`${styles.title} ${typo.navItem2}`}>{title}</h3>
-      <ul>
+      <ul className={styles.footerLinks}>
         {links.map((link, index) => (
           <li key={index}>
             <a href={link.href}>{link.label}</a>
