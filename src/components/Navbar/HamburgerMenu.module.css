@@ -1,7 +1,12 @@
 .hamburgerButton {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
+}
+
+svg {
+  width: 32px;
+  height: 32px;
 }
 
 @media (min-width: 1024px) {

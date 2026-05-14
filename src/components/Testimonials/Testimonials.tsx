@@ -23,7 +23,7 @@ export function Testimonials() {
       <img src={shapeRight} className={styles.decor} data-side="right" />
       <img src={shapeLeft} className={styles.decor} data-side="left" />
 
-      <h2 className={`${layout.title} ${typo.titleSection}`}>
+      <h2 className={`${layout.title} ${typo.titleSection} ${styles.title}`}>
         What other users say
       </h2>
       <div className={styles.testimonialWrapper}>

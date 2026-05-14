@@ -23,6 +23,10 @@
   }
 }
 
+.title {
+  z-index: 2;
+}
+
 .testimonialWrapper {
   display: flex;
   gap: 12px;
