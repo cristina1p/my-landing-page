@@ -1,7 +1,6 @@
 .favoriteTools {
   padding: 48px 0;
   gap: 32px;
-  scroll-margin-top: 70px;
 }
 .textGroup p {
   color: var(--text-main);
@@ -30,7 +29,6 @@
   .favoriteTools {
     padding: 80px 0px;
     gap: 45px;
-    scroll-margin-top: 0;
   }
 
   .gridContainer {

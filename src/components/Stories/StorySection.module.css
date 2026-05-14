@@ -3,7 +3,6 @@
   padding: 0;
   padding: 48px 0px 48px 0px;
   gap: 80px;
-  scroll-margin-top: 70px;
 }
 
 .textGroup {
@@ -55,11 +54,5 @@
 
   .rightBtn {
     right: -65px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .storiesContainer {
-    scroll-margin-top: 0;
   }
 }

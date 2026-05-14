@@ -4,7 +4,6 @@
   padding: 48px 16px;
   gap: 30px;
   background-color: var(--bg-color-accent);
-  scroll-margin-top: 70px;
 }
 
 .decor {
@@ -61,7 +60,6 @@
     gap: 80px;
     margin: 0 -80px;
     padding: 80px;
-    scroll-margin-top: 0px;
   }
 
   .testimonialWrapper {
